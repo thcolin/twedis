@@ -1,0 +1,61 @@
+{
+  "name": "anthomas/twedis",
+  "authors": [
+    "antoine <antoine.beauregard@epsi.fr>",
+    "thomas <thomas.colin1@epsi.fr>"
+  ],
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.*",
+    "fontawesome": "*",
+    "moment": "~2.10.2",
+    "angular": "*",
+    "angular-route": "*",
+    "angular-local-storage": "~0.1.5",
+    "angular-moment": "~0.10.0",
+    "ngInfiniteScroll": "~1.2.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js",
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.svg",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.woff",
+        "dist/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "fontawesome": {
+      "main": [
+        "css/font-awesome.min.css",
+        "fonts/FontAwesome.otf",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.svg",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.woff2"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    },
+    "angular": {
+      "main": [
+        "angular.min.js"
+      ]
+    },
+    "moment": {
+      "dependencies": {
+        "jquery": ">= 1.9.1"
+      },
+      "main": [
+        "min/moment.min.js",
+        "locale/fr.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<div id="following">
+	
+	<div class="col-sm-8 following">
+	
+		<div class="user" ng-repeat="username in user.following">
+			
+			<h3><a href="#/user/{{ username }}">{{ username }}</a></h3>
+			<p>@{{ username }}</p>
+			
+			<div class="isFollower">
+			
+				<span class="text-muted" ng-show="user.gotFollower(username)">Vous suit.</span>
+			
+			</div>
+			
+			<button class="btn btn-danger btn-block" ng-click="user.toggleFollow({username:username})">Unfollow</button>
+			
+		</div>
+	
+		<div class="user" ng-hide="user.following.length > 0">
+			
+			<h3>Vous ne suivez personne <br/><br/>:(</h3>
+			
+		</div>
+		
+		<div class="clearfix"></div>
+		
+	</div>
+
+</div>

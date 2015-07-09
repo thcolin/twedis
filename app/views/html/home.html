@@ -1,0 +1,36 @@
+<div id="home">
+	
+	<div class="col-sm-8 tweets" infinite-scroll="loadTweets()">
+		
+		<div class="tweet write">
+			
+			<form ng-submit="tweet()">
+			
+				<textarea class="form-control" ng-model="message" placeholder="Écrivez un tweet !" maxlength="140"></textarea>
+				
+				<div class="pull-right">
+				
+					<span class="count">{{ (140 - message.length) }}</span>
+					<button class="btn btn-primary" type="submit">Tweeter</button>
+				
+				</div>
+				
+				<div class="clearfix"></div>
+			
+			</form>
+			
+		</div>
+		
+		<div class="tweet" ng-repeat="tweet in tweets" tweet="tweet"></div>
+		
+		<div class="tweet" ng-hide="tweets.length > 0">
+			
+			<p>Aucun tweets de vos followers !</p>
+			
+			<span class="about text-muted">Suivez de nouveaux utilisateurs ;)</span>
+			
+		</div>
+		
+	</div>
+
+</div>

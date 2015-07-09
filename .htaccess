@@ -1,0 +1,12 @@
+Options +FollowSymlinks
+Options +MultiViews
+Options -Indexes
+
+RewriteEngine On
+
+# Rewrite for AltoRouter
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* public/index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule !^public/ - [F,L]

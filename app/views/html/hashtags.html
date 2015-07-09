@@ -1,0 +1,17 @@
+<div id="tweets">
+	
+	<div class="col-sm-8 tweets" infinite-scroll="loadTweets()">
+		
+		<div class="tweet" ng-repeat="tweet in tweets" tweet="tweet"></div>
+		
+		<div class="tweet" ng-hide="tweets.length > 0">
+			
+			<p>Aucun tweets !</p>
+			
+			<span class="about text-muted">Cet utilisateur n'as pas encore tweeté !</span>
+			
+		</div>
+		
+	</div>
+
+</div>

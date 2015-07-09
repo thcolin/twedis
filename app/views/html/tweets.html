@@ -1,0 +1,69 @@
+<div id="tweets">
+	
+	<div class="col-sm-8 tweets" infinite-scroll="loadTweets()">
+		
+		<div class="tweet profil">
+	
+			<h3>{{ user.username }}</h3> - <a href="#/user/{{ user.username }}">@{{ user.username }}</a>
+			
+			<span class="text-muted" ng-show="userService.currentUser.gotFollower(user.username)"><br/><i>Vous follow</i></span>
+			
+			<div class="row">
+			
+				<div class="col-sm-4">
+					
+					<div class="stats">
+					
+						<h5>Tweets</h5>
+						<a href="#/user/{{ user.username }}">{{ user.tweets }}</a>
+						
+					</div>
+					
+				</div>
+				
+				<div class="col-sm-4">
+					
+					<div class="stats">
+					
+						<h5>Following</h5>
+						<a href="#/user/{{ user.username }}/following">{{ user.following.length }}</a>
+					
+					</div>
+					
+				</div>
+				
+				<div class="col-sm-4">
+					
+					<div class="stats">
+					
+						<h5>Followers</h5>
+						<a href="#/user/{{ user.username }}/followers">{{ user.followers.length }}</a>
+						
+					</div>
+					
+				</div>
+				
+				<div class="col-sm-12" ng-show="userService.currentUser.username != user.username">
+					
+					<button class="btn btn-lg btn-danger btn-block" type="submit" ng-show="userService.currentUser.isFollowing(user.username)" ng-click="userService.currentUser.toggleFollow(user)">Unfollow</button>
+					<button class="btn btn-lg btn-primary btn-block" type="submit" ng-hide="userService.currentUser.isFollowing(user.username)" ng-click="userService.currentUser.toggleFollow(user)">Follow</button>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="tweet" ng-repeat="tweet in tweets" tweet="tweet"></div>
+		
+		<div class="tweet" ng-hide="tweets.length > 0">
+			
+			<p>Aucun tweets !</p>
+			
+			<span class="about text-muted">Cet utilisateur n'as pas encore tweeté !</span>
+			
+		</div>
+		
+	</div>
+
+</div>

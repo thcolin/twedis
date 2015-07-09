@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+
+body {
+  background-color: #eee;
+}
+#container #alert {
+  padding: 20px 40px 0px 40px;
+}
+#container #alert i:first-of-type {
+  padding-right: 5px;
+}
+#container #header a:hover {
+  text-decoration: none;
+}
+#container .profil {
+  padding: 1px 30px 15px 15px;
+  background-color: #dcdcdc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+#container .profil a {
+  cursor: pointer;
+}
+#container .profil p {
+  font-size: small;
+}
+#container .profil .stats {
+  text-align: center;
+}
+#container #home .tweets .profil h3,
+#container #home .tweets .profil a,
+#container #tweets .tweets .profil h3,
+#container #tweets .tweets .profil a {
+  display: inline !important;
+}
+#container #home .tweets .profil .stats,
+#container #tweets .tweets .profil .stats {
+  margin-top: 20px;
+  background: #dcdcdc;
+  padding: 5px 0px;
+  border-radius: 4px;
+}
+#container #home .tweets .profil button,
+#container #tweets .tweets .profil button {
+  margin-top: 20px;
+}
+#container #home .tweets .tweet,
+#container #tweets .tweets .tweet {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+#container #home .tweets .tweet.write .pull-right,
+#container #tweets .tweets .tweet.write .pull-right {
+  margin-top: 10px;
+}
+#container #home .tweets .tweet.write .pull-right .count,
+#container #tweets .tweets .tweet.write .pull-right .count {
+  padding: 0px 10px;
+}
+#container #followers .user,
+#container #following .user {
+  background: #fafafa;
+  width: 150px;
+  height: 170px;
+  margin: 10px;
+  padding: 0px 15px;
+  float: left;
+}
+#container #followers .user .isFollower,
+#container #following .user .isFollower {
+  height: 25px;
+}
+#container #followers .user .isFollower .text-muted,
+#container #following .user .isFollower .text-muted {
+  font-style: italic;
+}
+#container #followers .user button,
+#container #following .user button {
+  margin-top: 10px;
+}
+#container #login .form-signin,
+#container #register .form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+#container #login .form-signin .form-signin-heading,
+#container #register .form-signin .form-signin-heading {
+  margin-bottom: 10px;
+}
+#container #login .form-signin .form-control,
+#container #register .form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+#container #login .form-signin .form-control:focus,
+#container #register .form-signin .form-control:focus {
+  z-index: 2;
+}
+#container #login .form-signin input,
+#container #register .form-signin input {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+#container #login .form-signin input:first-of-type,
+#container #register .form-signin input:first-of-type {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+#container #login .form-signin input:last-of-type,
+#container #register .form-signin input:last-of-type {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-bottom: 5px;
+}
+#container #login .form-signin a:hover,
+#container #register .form-signin a:hover {
+  text-decoration: none;
+}
+#container #login .form-signin button,
+#container #register .form-signin button {
+  margin-top: 10px;
+}

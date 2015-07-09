@@ -1,0 +1,186 @@
+body{
+		
+	background-color: #eee;
+	
+}
+
+#container{
+	
+	#alert{
+		
+		padding: 20px 40px 0px 40px;
+		
+		i:first-of-type{
+			padding-right: 5px;
+		}
+	
+	}
+	
+	#header{
+		
+		a:hover{
+			text-decoration: none;
+		}
+		
+	}
+			
+	.profil{
+		
+		padding: 1px 30px 15px 15px;
+		background-color: #dcdcdc;
+		border-radius: 4px;
+		margin-bottom: 20px;
+		
+		a{
+			cursor: pointer;
+		}
+		
+		p{
+			font-size: small;
+		}
+		
+		.stats{
+			text-align: center;
+		}
+	
+	}
+	
+	#home, #tweets{
+	
+		.tweets{
+			
+			.profil{
+				
+				h3, a{
+					display: inline !important;
+				}
+				
+				.stats{
+					margin-top: 20px;
+					background: #dcdcdc;
+					padding: 5px 0px;
+					border-radius: 4px;
+				}
+				
+				button{
+					margin-top: 20px;
+				}
+				
+			}
+			
+			.tweet{
+				
+				padding: 15px;
+				margin-bottom: 15px;
+				background-color: #fafafa;
+				border-radius: 4px;
+				
+				&.write{
+					
+					.pull-right{
+					
+						margin-top: 10px;
+					
+						.count{
+							padding: 0px 10px;
+						}
+					
+					}
+					
+				}
+			
+			}
+			
+		}
+	
+	}
+	
+	#followers, #following{
+		
+		.user{
+			
+			background: #fafafa;
+			width: 150px;
+			height: 170px;
+			margin: 10px;
+			padding: 0px 15px;
+			float: left;
+			
+			.isFollower{
+				
+				height: 25px;
+			
+				.text-muted{
+					font-style: italic;
+				}
+			
+			}
+			
+			button{
+				margin-top: 10px;
+			}
+			
+		}
+		
+	}
+	
+	#login, #register{
+
+		.form-signin{
+			
+			max-width: 330px;
+			padding: 15px;
+			margin: 0 auto;
+		
+			.form-signin-heading{
+				margin-bottom: 10px;
+			}
+			
+			.form-control{
+				
+				position: relative;
+				height: auto;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding: 10px;
+				font-size: 16px;
+			
+			}
+			
+			.form-control:focus {
+				z-index: 2;
+			}
+			
+			input{
+				margin-bottom: -1px;
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+				border-top-right-radius: 0;
+				border-top-left-radius: 0;
+			}
+			
+			input:first-of-type{
+				border-top-right-radius: 3px;
+				border-top-left-radius: 3px;
+			}
+			
+			input:last-of-type{
+				border-bottom-right-radius: 3px;
+				border-bottom-left-radius: 3px;
+				margin-bottom: 5px;
+			}
+			
+			a:hover{
+				text-decoration: none;
+			}
+			
+			button{
+				margin-top: 10px;
+			}
+			
+		}
+	
+	}
+
+}
